@@ -1,58 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shahzaib | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Shahzaib</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
 </head>
-<body>
+<bodystyle="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;" 
+      onselectstart="return false" 
+      ondragstart="return false" 
+      oncontextmenu="return false">
+    <canvas id="falling-stones-bg"></canvas>
+    <!-- Navigation (uses your existing navigation) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">PortFolio</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="contact-btn">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Hi, I'm <span>Shahzaib</span></h1>
-    <p>BSIT Student | Future Web Developer</p>
-  </section>
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="about-hero fade-in">
+                <h1>About Me</h1>
+                <p class="subtitle">Passionate Full Stack Developer & Creative Problem Solver</p>
+            </div>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a BSIT student passionate about web development.
-      I love building clean, simple, and functional websites
-      while continuously learning new technologies.
-    </p>
-  </section>
+            <!-- Main Content Grid -->
+            <div class="about-main-grid">
+                <!-- Profile Sidebar -->
+                <div class="profile-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-placeholder">
+                                    <img src="shahzaib.jpg"
+                                        alt="Shahzaib"
+                                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <svg width="90" height="120"
+                                        viewBox="0 0 24 24" fill="currentColor"
+                                        style="display: none;">
+                                        <path
+                                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                    </svg>
+                                </div>
+                        <h2 class="profile-name">Shahzaib</h2>
+                        <p class="profile-title">Full Stack Developer</p>
+                        
+                        <ul class="quick-info">
+                            <li>
+                                <span class="label">Location</span>
+                                <span>Lahore, Pakistan</span>
+                            </li>
+                            <li>
+                                <span class="label">Experience</span>
+                                <span>1+ Years</span>
+                            </li>
+                            <li>
+                                <span class="label">Education</span>
+                                <span>BS Information Technology</span>
+                            </li>
+                            <li>
+                                <span class="label">Status</span>
+                                <span>Available for Projects</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-  <!-- SKILLS -->
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>GitHub</span>
-    </div>
-  </section>
+                <!-- Main Content -->
+                <div class="main-content-area">
+                    <!-- About Content -->
+                    <div class="about-content">
+                        <h2>Hello! I'm Shahzaib</h2>
+                        <p>
+                            A passionate Full Stack Developer with over 1+ years of experience in creating exceptional digital experiences. I specialize in building modern, scalable web applications that solve real-world problems. My journey in technology has been driven by curiosity, creativity, and a commitment to continuous learning.
+                        </p>
+                        <p>
+                            I believe in writing clean, maintainable code and creating user interfaces that are both beautiful and functional. Every project I work on is an opportunity to push boundaries and deliver something extraordinary.
+                        </p>
+                        <p>
+                            With a strong foundation in both frontend and backend technologies, I enjoy the complete development process - from conceptualizing user experiences to architecting robust server-side solutions. I'm always excited to take on new challenges and collaborate with teams that share my passion for excellence.
+                        </p>
+                    </div>
 
-  <!-- PROJECTS -->
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>✔ Student Registration Form</li>
-      <li>✔ Calculator App (JavaScript)</li>
-      <li>✔ Personal Portfolio Website</li>
-    </ul>
-  </section>
+                    <!-- Skills Section -->
+                    <div class="skills-section">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-categories">
+                            <div class="skill-category">
+                                <h4>Frontend Development</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">JavaScript (ES6+)</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                    <span class="skill-tag">React.js</span>
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">SASS</span>
+                                    <span class="skill-tag">Responsive Design</span>
+                                </div>
+                            </div>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: shahzaibakbar874@gmail.com</p>
-  </section>
+                            <div class="skill-category">
+                                <h4>Backend Development</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Express.js</span>
+                                    <span class="skill-tag">MongoDB</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">REST APIs</span>
+                                    <span class="skill-tag">GraphQL</span>
+                                    <span class="skill-tag">Authentication</span>
+                                </div>
+                            </div>
 
-  <footer>
-    <p>© 2025 Shahzaib | Unique Portfolio</p>
-  </footer>
+                            <div class="skill-category">
+                                <h4>Tools & Technologies</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git & GitHub</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Webpack</span>
+                                    <span class="skill-tag">Jest</span>
+                                    <span class="skill-tag">Linux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Interests Section -->
+                    <div class="interests-section">
+                        <h3>Interests & Passions</h3>
+                        <div class="interests-grid">
+                            <div class="interest-item">Open Source</div>
+                            <div class="interest-item">UI/UX Design</div>
+                            <div class="interest-item">Machine Learning</div>
+                            <div class="interest-item">Mobile Development</div>
+                            <div class="interest-item">Cloud Computing</div>
+                            <div class="interest-item">Tech Mentoring</div>
+                            <div class="interest-item">Startups</div>
+                            <div class="interest-item">Innovation</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div class="cta-section">
+                        <a href="contact.html" class="cta-button">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Use your existing JavaScript files -->
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    <script src="navigation.js"></script>
 </body>
 </html>
